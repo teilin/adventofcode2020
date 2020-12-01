@@ -1,4 +1,4 @@
-# Day 1: XXX
+# Day 1: Report Repair
 
 ## Part Report Repair
 
