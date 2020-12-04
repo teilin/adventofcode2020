@@ -1,0 +1,15 @@
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/Day04.deps.json
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/Day04.runtimeconfig.json
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/Day04.runtimeconfig.dev.json
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/Day04.dll
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/ref/Day04.dll
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/bin/Debug/net5.0/Day04.pdb
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.csprojAssemblyReference.cache
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.GeneratedMSBuildEditorConfig.editorconfig
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.AssemblyInfoInputs.cache
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.AssemblyInfo.cs
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.csproj.CoreCompileInputs.cache
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.dll
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/ref/Day04.dll
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.pdb
+/Users/teislindemark/Documents/Private/adventofcode2020/Day04/obj/Debug/net5.0/Day04.genruntimeconfig.cache
