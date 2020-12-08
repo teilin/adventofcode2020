@@ -52,14 +52,65 @@ func part1(instructions *[]instruction, acc *int) {
 	}
 }
 
-func part2() {
-	// Coming up...
+func runProgram(instructions *[]instruction, acc *int) bool {
+	*acc = 0
+	counter := make([]int, len(*instructions))
+	index := 0
+	for index < len(*instructions) {
+		ins := (*instructions)[index]
+		if counter[index] >= 1 {
+			return false
+		}
+		if ins.operation == "nop" {
+			counter[index]++
+			index++
+		} else if ins.operation == "acc" {
+			*acc += ins.argument
+			index++
+		} else if ins.operation == "jmp" {
+			counter[index]++
+			index += ins.argument
+		}
+	}
+	return true
+}
+
+func swapOperations(instruction instruction) instruction {
+	if instruction.operation == "nop" {
+		instruction.operation = "jmp"
+	} else if instruction.operation == "jmp" {
+		instruction.operation = "nop"
+	}
+	return instruction
+}
+
+func checkSwitch(instructions *[]instruction, instructionIndexSwitched int, acc *int) bool {
+	(*instructions)[instructionIndexSwitched] = swapOperations((*instructions)[instructionIndexSwitched])
+	if runProgram(instructions, acc) {
+		return true
+	} else {
+		(*instructions)[instructionIndexSwitched] = swapOperations((*instructions)[instructionIndexSwitched])
+		return false
+	}
+}
+
+func part2(instructions *[]instruction, acc *int) {
+	index := 0
+	for index < len(*instructions)-1 {
+		if checkSwitch(instructions, index, acc) == false {
+			index++
+		} else {
+			break
+		}
+	}
 }
 
 func main() {
 	var instructions []instruction
 	readBootCode(&instructions, "input.txt")
 	accumulator := 0
-	part1(&instructions, &accumulator)
+	part1(&instructions, &accumulator) // Solution: 1331
+	fmt.Println(accumulator)
+	part2(&instructions, &accumulator) // Solution: 1121
 	fmt.Println(accumulator)
 }
